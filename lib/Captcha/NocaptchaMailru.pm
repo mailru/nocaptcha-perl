@@ -1,4 +1,4 @@
-package Captcha::Nocaptcha;
+package Captcha::NocaptchaMailru;
 
 use strict;
 use warnings;
@@ -14,7 +14,7 @@ our @EXPORT = qw(
     nocaptcha_check
     nocaptcha_check_detailed
 );
-use version 0.77; our $VERSION = version->declare('v0.1.0');
+use version 0.77; our $VERSION = version->declare('v0.1.1');
 
 use constant API_SERVER => 'https://api-nocaptcha.mail.ru';
 
@@ -102,13 +102,13 @@ __END__
 
 =head1 NAME
 
-Captcha::Nocaptcha - Module for working with Nocaptcha Mail.Ru service
+Captcha::NocaptchaMailru - Module for working with Nocaptcha Mail.Ru service
 
 
 
 =head1 SYNOPSIS
 
-    use Captcha::Nocaptcha;
+    use Captcha::NocaptchaMailru;
 
     use constant PUBLIC_KEY => 'e5238532bf56e4c24bd5489d463ac2a0';
     use constant PRIVATE_KEY => '3cf11185476394b85bcec3fbf16c69a4';
@@ -141,19 +141,19 @@ Use this email for feedback: nocaptcha@corp.mail.ru
 
 =item nocaptcha_generate_captcha_url
 
-Same as C<Captcha::Nocaptcha::generate_captcha_url>.
+Same as C<Captcha::NocaptchaMailru::generate_captcha_url>.
 
 =item nocaptcha_generate_captcha_tag
 
-Same as C<Captcha::Nocaptcha::generate_captcha_tag>.
+Same as C<Captcha::NocaptchaMailru::generate_captcha_tag>.
 
 =item nocaptcha_check
 
-Same as C<Captcha::Nocaptcha::check>.
+Same as C<Captcha::NocaptchaMailru::check>.
 
 =item nocaptcha_check_detailed
 
-Same as C<Captcha::Nocaptcha::check_detailed>.
+Same as C<Captcha::NocaptchaMailru::check_detailed>.
 
 =back
 
