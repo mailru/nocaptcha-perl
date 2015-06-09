@@ -14,7 +14,7 @@ our @EXPORT = qw(
     nocaptcha_check
     nocaptcha_check_detailed
 );
-use version 0.77; our $VERSION = version->declare('v0.1.1');
+use version 0.77; our $VERSION = version->declare('v1.0.0');
 
 use constant API_SERVER => 'https://api-nocaptcha.mail.ru';
 

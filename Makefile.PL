@@ -8,6 +8,7 @@ WriteMakefile(
         JSON => 2,
         URI::Escape => 3,
     },
+    LICENSE           => 'mit',
     ($] >= 5.005 ?     ## Add these new keywords supported since 5.005
       (ABSTRACT_FROM  => 'lib/Captcha/NocaptchaMailru.pm', # retrieve abstract from module
        AUTHOR         => 'Oleg Kovalev <man0xff@gmail.com>') : ()),

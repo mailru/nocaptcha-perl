@@ -1,7 +1,10 @@
 ^blib/
 .tar.gz$
 ^Makefile$
+^Makefile.old$
+^MYMETA.*
 ^pm_to_blib$
 ^\.git
 ^example/
 .bak$
+^MANIFEST.SKIP$
